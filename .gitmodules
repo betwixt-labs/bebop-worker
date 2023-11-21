@@ -1,0 +1,4 @@
+[submodule "bebop"]
+	path = bebop
+	url = https://github.com/betwixt-labs/bebop.git
+	branch = features/wasi-cli

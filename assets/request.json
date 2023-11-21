@@ -1,0 +1,6 @@
+{
+    "generator": "ts",
+    "outFile": "test.ts",
+    "namespace": "Betwixt",
+    "schema": "enum Instrument {\n    Sax = 0;\n    Trumpet = 1;\n    Clarinet = 2;\n}\n\n/* test */\n[opcode(\"JAZZ\")]\nreadonly struct Musician {\n    /* a name */\n    string name;\n\t/* an instrument */\n    Instrument plays;\n}\n\nmessage Song {\n    1 -> string title;\n    2 -> uint16 year;\n    3 -> Musician[] performers;\n}\n\nstruct Library {\n    map[guid, Song] songs;\n}"
+}
